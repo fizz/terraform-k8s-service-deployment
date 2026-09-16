@@ -180,9 +180,9 @@ resource "kubernetes_deployment_v1" "service" {
                 path = var.health_check_path
                 port = var.container_port
               }
-              period_seconds        = var.startup_probe.period_seconds
-              timeout_seconds       = var.startup_probe.timeout_seconds
-              failure_threshold     = var.startup_probe.failure_threshold
+              period_seconds    = var.startup_probe.period_seconds
+              timeout_seconds   = var.startup_probe.timeout_seconds
+              failure_threshold = var.startup_probe.failure_threshold
             }
           }
 
